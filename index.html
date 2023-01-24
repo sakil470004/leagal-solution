@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Legal Agent</title>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -18,23 +21,29 @@
                     colors: {
                         primary: '#B68C5A',
                     },
-                    backgroundImage: {
-                        'banner': "url('./images/banner.png')",
-                    },
                 }
             }
         }
     </script>
+    <!-- tailwind elements -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom css for carousel -->
+    <link rel="stylesheet" href="./carousol.css">
 
 </head>
+<!-- my style -->
 <style>
     body {
         font-family: 'Poppins', sans-serif;
     }
 
-    /* .bg-banner{
+    .bg-banner {
         background-image: url('/images/banner.png');
-    } */
+        background-color: rgba(31, 20, 20, 0.378);
+        background-blend-mode: multiply;
+    }
 </style>
 
 <body>
@@ -98,7 +107,7 @@
             </div>
         </nav>
         <!-- banner -->
-        <section class="container mx-auto bg-banner bg-no-repeat bg-cover bg-center
+        <section class="container mx-auto bg-banner mix-blend-darken bg-no-repeat bg-cover bg-center
         w-full  text-center text-white flex items-end md:h-[550px] p-4 md:p-0">
             <div class="md:max-w-[58%] md:mx-auto">
                 <h1 class="font-semibold text-7xl leading-tight">We Provide Effective Legal Solutions</h1>
@@ -116,7 +125,8 @@
         </section>
     </header>
     <main class="container mx-auto p-4 md:p-0">
-        <section class="my-28 text-center">
+        <!-- legal practice area -->
+        <section class="my-20 md:my-28 text-center">
             <h2 class="text-4xl font-semibold ">The Legal Practice Area</h2>
             <p class="mt-6 mb-16 md:max-w-[60%] m-auto text-gray-600">There are many variations of passages of Lorem
                 Ipsum
@@ -173,6 +183,101 @@
                     <img class="mt-8" src="./images/Frame.png" alt="">
                 </div>
             </div>
+        </section>
+        <!--what our client say -->
+        <section class="text-center">
+            <h2 class="text-4xl font-semibold ">What Our Client Say</h2>
+            <p class="mt-6 mb-16 md:max-w-[60%] m-auto text-gray-600">The statement came from our client you can check
+                it.Here We have our client photo and and his or her statement .your can clear your self by finding more
+                details .</p>
+            <div id="carousel-id" class="carousel max-h-[500px]" aria-label="Gallery">
+                <ol class="carousel__viewport">
+                    <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                        <div class="carousel__snapper"></div>
+                        <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+                        <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+
+                        <div
+                            class="flex flex-col items-center justify-center w-full h-[500px] text-white md:py-24 md:px-32">
+                            <img width="70" src="./images/user-1.png" alt="">
+                            <h4 class="text-2xl font-semibold mt-6 mb-1">Awlad Hossains</h4>
+                            <p>UIX Designer</p>
+                            <p class="mt-8 text-gray-400">Contrary to popular belief, Lorem Ipsum is not simply random
+                                text. It has roots in a piece of classical Latin literature from 45 BC, making it over
+                                2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
+                                Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                        </div>
+                    </li>
+                    <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                        <div class="carousel__snapper"></div>
+                        <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+                        <div
+                            class="flex flex-col items-center justify-center w-full h-[500px] text-white md:py-24 md:px-32">
+                            <img width="70" src="./images/user-3.png" alt="">
+                            <h4 class="text-2xl font-semibold mt-6 mb-1">Marufa Malun</h4>
+                            <p>Designer</p>
+                            <p class="mt-8 text-gray-400">Contrary to popular belief, Lorem Ipsum is not simply random
+                                text. It has roots in a piece of classical Latin literature from 45 BC, making it over
+                                2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
+                                Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                        </div>
+                    </li>
+                    <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                        <div class="carousel__snapper"></div>
+                        <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+                        <div
+                            class="flex flex-col items-center justify-center w-full h-[500px] text-white md:py-24 md:px-32">
+                            <img width="70" src="./images/user-2.png" alt="">
+                            <h4 class="text-2xl font-semibold mt-6 mb-1">Rohima Khan</h4>
+                            <p>Backend</p>
+                            <p class="mt-8 text-gray-400">Contrary to popular belief, Lorem Ipsum is not simply random
+                                text. It has roots in a piece of classical Latin literature from 45 BC, making it over
+                                2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
+                                Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                        </div>
+                    </li>
+                    <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+                        <div class="carousel__snapper"></div>
+                        <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+                        <div
+                            class="flex flex-col items-center justify-center w-full h-[500px] text-white md:py-24 md:px-32">
+                            <img width="70" src="./images/user-4.png" alt="">
+                            <h4 class="text-2xl font-semibold mt-6 mb-1">Banu Mohin</h4>
+                            <p>Law Manupolator</p>
+                            <p class="mt-8 text-gray-400">Contrary to popular belief, Lorem Ipsum is not simply random
+                                text. It has roots in a piece of classical Latin literature from 45 BC, making it over
+                                2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
+                                Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                        </div>
+                    </li>
+                </ol>
+                <aside class="carousel__navigation">
+                    <ol class="carousel__navigation-list">
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
+                        </li>
+                    </ol>
+                </aside>
+            </div>
+        </section>
+        <!-- Frequently Asked Any Questions -->
+        <section class="my-20 md:my-28">
+            <h2 class="text-4xl font-semibold text-center">Frequently Asked Any Questions</h2>
+            <p class="mt-6 mb-16 md:max-w-[60%] m-auto text-gray-600 text-center">There are many variations of passages
+                of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour. .
+            </p>
         </section>
     </main>
 </body>
