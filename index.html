@@ -20,6 +20,7 @@
                 extend: {
                     colors: {
                         primary: '#B68C5A',
+                        secondary: '#F3F3F3',
                     },
                 }
             }
@@ -174,7 +175,7 @@
 
         <!-- banner -->
         <section class="container mx-auto bg-banner mix-blend-darken bg-no-repeat bg-cover bg-center
-        w-full  text-center text-white flex items-end md:h-[550px] p-4 md:p-0">
+        w-full  text-center text-white flex items-center md:h-[550px] p-4 md:p-0">
             <div class="md:max-w-[58%] md:mx-auto">
                 <h1 class="font-semibold text-7xl leading-tight">We Provide Effective Legal Solutions</h1>
                 <p class="mt-6 mb-8">There are many variations of passages of Lorem Ipsum available, but the majority
@@ -250,229 +251,338 @@
                 </div>
             </div>
         </section>
-        <!--what our client say -->
-        <section class="text-center">
-            <h2 class="text-4xl font-semibold ">What Our Client Say</h2>
-            <p class="mt-6 mb-16 md:max-w-[60%] m-auto text-gray-600">The statement came from our client you can check
-                it.Here We have our client photo and and his or her statement .your can clear your self by finding more
-                details .</p>
-            <div id="carousel-id" class="carousel max-h-[500px]" aria-label="Gallery">
-                <ol class="carousel__viewport">
-                    <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
-                        <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+        <!-- our lawyer -->
+        <section>
+            <section class="text-center my-20 md:my-28">
+                <h2 class="text-4xl font-semibold">Our Lawyer</h2>
+                <p class="mt-6 mb-16 md:max-w-[60%] m-auto text-gray-600">The statement came from our client you can
+                    check
+                    it.Here We have our client photo and and his or her statement .your can clear your self by finding
+                    more
+                    details .</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 ">
+                    <div class="bg-secondary rounded-md drop-shadow-md py-5 px-8 flex flex-col items-center">
+                        <img width="200" src="./images/user-1.png" alt="">
+                        <h3 class="text-3xl mt-4 mb-3">Sohag Khan</h3>
+                        <p>Chief Legal Officer</p>
+                        <button type="button"
+                            class="text-white bg-primary   font-medium rounded-md text-sm px-5 py-2 mt-3 text-center mr-3 md:mr-0 ">
+                            Call
+                        </button>
+                    </div>
+                    <div class="bg-secondary rounded-md drop-shadow-md py-5 px-8 flex flex-col items-center">
+                        <img width="200" src="./images/user-2.png" alt="">
+                        <h3 class="text-3xl mt-4 mb-3">Korim man</h3>
+                        <p>Management</p>
+                        <button type="button"
+                            class="text-white bg-primary   font-medium rounded-md text-sm px-5 py-2 mt-3 text-center mr-3 md:mr-0 ">
+                            Call
+                        </button>
+                    </div>
+                    <div class="bg-secondary rounded-md drop-shadow-md py-5 px-8 flex flex-col items-center">
+                        <img width="200" src="./images/user-3.png" alt="">
+                        <h3 class="text-3xl mt-4 mb-3">Habibur Rahman</h3>
+                        <p>Executive Officer</p>
+                        <button type="button"
+                            class="text-white bg-primary   font-medium rounded-md text-sm px-5 py-2 mt-3 text-center mr-3 md:mr-0 ">
+                            Call
+                        </button>
+                    </div>
 
-                        <div
-                            class="flex flex-col items-center justify-center w-full h-[500px] text-white md:py-24 md:px-32">
-                            <img width="70" src="./images/user-1.png" alt="">
-                            <h4 class="text-2xl font-semibold mt-6 mb-1">Awlad Hossains</h4>
-                            <p>UIX Designer</p>
-                            <p class="mt-8 text-gray-400">Contrary to popular belief, Lorem Ipsum is not simply random
-                                text. It has roots in a piece of classical Latin literature from 45 BC, making it over
-                                2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
-                                Virginia, looked up one of the more obscure Latin words, consectetur.</p>
-                        </div>
-                    </li>
-                    <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
-                        <div
-                            class="flex flex-col items-center justify-center w-full h-[500px] text-white md:py-24 md:px-32">
-                            <img width="70" src="./images/user-3.png" alt="">
-                            <h4 class="text-2xl font-semibold mt-6 mb-1">Marufa Malun</h4>
-                            <p>Designer</p>
-                            <p class="mt-8 text-gray-400">Contrary to popular belief, Lorem Ipsum is not simply random
-                                text. It has roots in a piece of classical Latin literature from 45 BC, making it over
-                                2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
-                                Virginia, looked up one of the more obscure Latin words, consectetur.</p>
-                        </div>
-                    </li>
-                    <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
-                        <div
-                            class="flex flex-col items-center justify-center w-full h-[500px] text-white md:py-24 md:px-32">
-                            <img width="70" src="./images/user-2.png" alt="">
-                            <h4 class="text-2xl font-semibold mt-6 mb-1">Rohima Khan</h4>
-                            <p>Backend</p>
-                            <p class="mt-8 text-gray-400">Contrary to popular belief, Lorem Ipsum is not simply random
-                                text. It has roots in a piece of classical Latin literature from 45 BC, making it over
-                                2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
-                                Virginia, looked up one of the more obscure Latin words, consectetur.</p>
-                        </div>
-                    </li>
-                    <li id="carousel__slide4" tabindex="0" class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
-                        <div
-                            class="flex flex-col items-center justify-center w-full h-[500px] text-white md:py-24 md:px-32">
-                            <img width="70" src="./images/user-4.png" alt="">
-                            <h4 class="text-2xl font-semibold mt-6 mb-1">Banu Mohin</h4>
-                            <p>Law Manupolator</p>
-                            <p class="mt-8 text-gray-400">Contrary to popular belief, Lorem Ipsum is not simply random
-                                text. It has roots in a piece of classical Latin literature from 45 BC, making it over
-                                2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
-                                Virginia, looked up one of the more obscure Latin words, consectetur.</p>
-                        </div>
-                    </li>
-                </ol>
-                <aside class="carousel__navigation">
-                    <ol class="carousel__navigation-list">
-                        <li class="carousel__navigation-item">
-                            <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+                </div>
+
+            </section>
+            <!--what our client say -->
+            <section class="text-center">
+                <h2 class="text-4xl font-semibold">What Our Client Say</h2>
+                <p class="mt-6 mb-16 md:max-w-[60%] m-auto text-gray-600">The statement came from our client you can
+                    check
+                    it.Here We have our client photo and and his or her statement .your can clear your self by finding
+                    more
+                    details .</p>
+                <div id="carousel-id" class="carousel max-h-[500px]" aria-label="Gallery">
+                    <ol class="carousel__viewport">
+                        <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                            <div class="carousel__snapper"></div>
+                            <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+                            <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+
+                            <div
+                                class="flex flex-col items-center justify-center w-full h-[500px] text-white md:py-24 md:px-32">
+                                <img width="70" src="./images/user-1.png" alt="">
+                                <h4 class="text-2xl font-semibold mt-6 mb-1">Awlad Hossains</h4>
+                                <p>UIX Designer</p>
+                                <p class="mt-8 text-gray-400">Contrary to popular belief, Lorem Ipsum is not simply
+                                    random
+                                    text. It has roots in a piece of classical Latin literature from 45 BC, making it
+                                    over
+                                    2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
+                                    Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                            </div>
                         </li>
-                        <li class="carousel__navigation-item">
-                            <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+                        <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                            <div class="carousel__snapper"></div>
+                            <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+                            <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+                            <div
+                                class="flex flex-col items-center justify-center w-full h-[500px] text-white md:py-24 md:px-32">
+                                <img width="70" src="./images/user-3.png" alt="">
+                                <h4 class="text-2xl font-semibold mt-6 mb-1">Marufa Malun</h4>
+                                <p>Designer</p>
+                                <p class="mt-8 text-gray-400">Contrary to popular belief, Lorem Ipsum is not simply
+                                    random
+                                    text. It has roots in a piece of classical Latin literature from 45 BC, making it
+                                    over
+                                    2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
+                                    Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                            </div>
                         </li>
-                        <li class="carousel__navigation-item">
-                            <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+                        <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                            <div class="carousel__snapper"></div>
+                            <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+                            <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+                            <div
+                                class="flex flex-col items-center justify-center w-full h-[500px] text-white md:py-24 md:px-32">
+                                <img width="70" src="./images/user-2.png" alt="">
+                                <h4 class="text-2xl font-semibold mt-6 mb-1">Rohima Khan</h4>
+                                <p>Backend</p>
+                                <p class="mt-8 text-gray-400">Contrary to popular belief, Lorem Ipsum is not simply
+                                    random
+                                    text. It has roots in a piece of classical Latin literature from 45 BC, making it
+                                    over
+                                    2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
+                                    Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                            </div>
                         </li>
-                        <li class="carousel__navigation-item">
-                            <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
+                        <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+                            <div class="carousel__snapper"></div>
+                            <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+                            <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+                            <div
+                                class="flex flex-col items-center justify-center w-full h-[500px] text-white md:py-24 md:px-32">
+                                <img width="70" src="./images/user-4.png" alt="">
+                                <h4 class="text-2xl font-semibold mt-6 mb-1">Banu Mohin</h4>
+                                <p>Law Manupolator</p>
+                                <p class="mt-8 text-gray-400">Contrary to popular belief, Lorem Ipsum is not simply
+                                    random
+                                    text. It has roots in a piece of classical Latin literature from 45 BC, making it
+                                    over
+                                    2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
+                                    Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                            </div>
                         </li>
                     </ol>
-                </aside>
-            </div>
-        </section>
-        <!-- Frequently Asked Any Questions -->
-        <section class="my-20 md:my-28">
-            <h2 class="text-4xl font-semibold text-center">Frequently Asked Any Questions</h2>
-            <p class="mt-6 mb-16 md:max-w-[60%] m-auto text-gray-600 text-center">There are many variations of passages
-                of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour. .
-            </p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 ">
-                <!-- accordian -->
-                <div id="accordion-color" data-accordion="collapse"
-                    data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">
-                    <h2 id="accordion-color-heading-1">
-                        <button type="button"
-                            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
-                            data-accordion-target="#accordion-color-body-1" aria-expanded="true"
-                            aria-controls="accordion-color-body-1">
-                            <span>Flex VS Grid ?</span>
-                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                    </h2>
-                    <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
-                        <div
-                            class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900 ">
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">
-                                ** CSS flexbox.
-                                <br>
-                                - one dimensional (align items in one direction)
-                                <br>
-                                - only horizontal
-                                <br>
-                                - your content shape the layout
-                                <br>
-                                <br>
-                                **CSS grid.
-                                <br>
-                                - two dimensional (can work on horizontal and vertical axis)
-                                <br>
-                                - your layout shape the content
-                                <br>
-                                - enables intentionally overlap items
-                            </p>
+                    <aside class="carousel__navigation">
+                        <ol class="carousel__navigation-list">
+                            <li class="carousel__navigation-item">
+                                <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+                            </li>
+                            <li class="carousel__navigation-item">
+                                <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+                            </li>
+                            <li class="carousel__navigation-item">
+                                <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+                            </li>
+                            <li class="carousel__navigation-item">
+                                <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
+                            </li>
+                        </ol>
+                    </aside>
+                </div>
+            </section>
+            <!-- Frequently Asked Any Questions -->
+            <section class="my-20 md:my-28">
+                <h2 class="text-4xl font-semibold text-center">Frequently Asked Any Questions</h2>
+                <p class="mt-6 mb-16 md:max-w-[60%] m-auto text-gray-600 text-center">There are many variations of
+                    passages
+                    of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
+                    humour. .
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 ">
+                    <!-- accordian -->
+                    <div id="accordion-color" data-accordion="collapse"
+                        data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">
+                        <h2 id="accordion-color-heading-1">
+                            <button type="button"
+                                class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+                                data-accordion-target="#accordion-color-body-1" aria-expanded="true"
+                                aria-controls="accordion-color-body-1">
+                                <span>Flex VS Grid ?</span>
+                                <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
+                            <div
+                                class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900 ">
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                    ** CSS flexbox.
+                                    <br>
+                                    - one dimensional (align items in one direction)
+                                    <br>
+                                    - only horizontal
+                                    <br>
+                                    - your content shape the layout
+                                    <br>
+                                    <br>
+                                    **CSS grid.
+                                    <br>
+                                    - two dimensional (can work on horizontal and vertical axis)
+                                    <br>
+                                    - your layout shape the content
+                                    <br>
+                                    - enables intentionally overlap items
+                                </p>
+                            </div>
+                        </div>
+                        <h2 id="accordion-color-heading-2">
+                            <button type="button"
+                                class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+                                data-accordion-target="#accordion-color-body-2" aria-expanded="false"
+                                aria-controls="accordion-color-body-2">
+                                <span>What is Media Query? Why we need it?</span>
+                                <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
+                            <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700">
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                    **Media Query help us break down website for different size of device.
+                                    <br>
+                                    <br>
+                                    **In Modern time , Most of the website are responsible With the help of media Query.
+                                    Media queries allow you to apply CSS styles depending on a device's general type.
+
+                                </p>
+
+                            </div>
+                        </div>
+                        <h2 id="accordion-color-heading-3">
+                            <button type="button"
+                                class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+                                data-accordion-target="#accordion-color-body-3" aria-expanded="false"
+                                aria-controls="accordion-color-body-3">
+                                <span>What is CSS Box Model ? How Does it work?</span>
+                                <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
+                            <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                    **A box in CSS consists of a content area, which is where any text, images, or other
+                                    HTML elements are displayed. This is optionally surrounded by padding, a border, and
+                                    a
+                                    margin, on one or more sides. The box model describes how these elements work
+                                    together
+                                    to create a box as displayed by CSS.
+                                    <br>
+                                    <br>
+                                    **In CSS, the term "box model" is used when talking about design and layout. The CSS
+                                    box
+                                    model is essentially a box that wraps around every HTML element. It consists of:
+                                    margins, borders, padding, and the actual content.
+                                </p>
+
+                            </div>
+                        </div>
+                        <h2 id="accordion-color-heading-4">
+                            <button type="button"
+                                class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+                                data-accordion-target="#accordion-color-body-4" aria-expanded="false"
+                                aria-controls="accordion-color-body-4">
+                                <span>what is symmetric tag?</span>
+                                <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
+                            <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
+                                <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                    **Semantic HTML refers to syntax that makes the HTML more comprehensible by better
+                                    defining the different sections and layout of web pages. It makes web pages more
+                                    informative and adaptable, allowing browsers and search engines to better interpret
+                                    content.
+                                </p>
+
+                            </div>
                         </div>
                     </div>
-                    <h2 id="accordion-color-heading-2">
-                        <button type="button"
-                            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
-                            data-accordion-target="#accordion-color-body-2" aria-expanded="false"
-                            aria-controls="accordion-color-body-2">
-                            <span>What is Media Query? Why we need it?</span>
-                            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                    </h2>
-                    <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
-                        <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700">
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">
-                                **Media Query help us break down website for different size of device.
-                                <br>
-                                <br>
-                                **In Modern time , Most of the website are responsible With the help of media Query.
-                                Media queries allow you to apply CSS styles depending on a device's general type.
-
-                            </p>
-
-                        </div>
-                    </div>
-                    <h2 id="accordion-color-heading-3">
-                        <button type="button"
-                            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
-                            data-accordion-target="#accordion-color-body-3" aria-expanded="false"
-                            aria-controls="accordion-color-body-3">
-                            <span>What is CSS Box Model ? How Does it work?</span>
-                            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                    </h2>
-                    <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
-                        <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">
-                                **A box in CSS consists of a content area, which is where any text, images, or other
-                                HTML elements are displayed. This is optionally surrounded by padding, a border, and a
-                                margin, on one or more sides. The box model describes how these elements work together
-                                to create a box as displayed by CSS.
-                                <br>
-                                <br>
-                                **In CSS, the term "box model" is used when talking about design and layout. The CSS box
-                                model is essentially a box that wraps around every HTML element. It consists of:
-                                margins, borders, padding, and the actual content.
-                            </p>
-
-                        </div>
-                    </div>
-                    <h2 id="accordion-color-heading-4">
-                        <button type="button"
-                            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
-                            data-accordion-target="#accordion-color-body-4" aria-expanded="false"
-                            aria-controls="accordion-color-body-4">
-                            <span>what is symmetric tag?</span>
-                            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                    </h2>
-                    <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
-                        <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">
-                                **Semantic HTML refers to syntax that makes the HTML more comprehensible by better
-                                defining the different sections and layout of web pages. It makes web pages more
-                                informative and adaptable, allowing browsers and search engines to better interpret
-                                content.
-                            </p>
-
-                        </div>
+                    <div>
+                        <img class="max-w-full" src="./images/faq.png" alt="">
                     </div>
                 </div>
-                <div>
-                    <img class="max-w-full" src="./images/faq.png" alt="">
+            </section>
+            <!-- contact us -->
+            <section class="my-20 md:my-28">
+                <h2 class="text-4xl font-semibold text-center">Contact With Us</h2>
+                <p class="mt-6 mb-16 md:max-w-[60%] m-auto text-gray-600 text-center">There are many variations of
+                    passages
+                    of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
+                    humour. .
+                </p>
+                <div class="grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-2 gap-10 lg:gap-0">
+                    <div
+                        class="md:col-span-1 md:row-span-1 flex flex-col items-center bg-secondary py-16 border-b-2 border-r-2 border-gray-400">
+                        <img width="40" src="./images/location.png" alt="">
+                        <h3 class="font-semibold text-2xl mt-4 ">Address</h3>
+                        <p class="mt-3 mb-2">A108 Adam Street</p>
+                        <p>New York, NY 535022</p>
+                    </div>
+                    <div
+                        class="md:col-span-1 md:row-span-1 flex flex-col items-center bg-secondary py-16 border-b-2  border-gray-400 ">
+                        <img width="40" src="./images/call.png" alt="">
+                        <h3 class="font-semibold text-2xl mt-4 ">Call US</h3>
+                        <p class="mt-3 mb-2">+1136765432345</p>
+                        <p>+-7654345678965445</p>
+                    </div>
+                    <div class="md:col-span-2 md:row-span-2 flex flex-col gap-7 lg:pl-8">
+                        <input class="w-full px-5 py-4 rounded-lg border-0 bg-secondary" type="text"
+                            placeholder="Your Name">
+                        <input class="w-full px-5 py-4 rounded-lg border-0 bg-secondary" type="email"
+                            placeholder="Your Email">
+                        <input class="w-full px-5 py-4 rounded-lg border-0 bg-secondary" type="text"
+                            placeholder="Subject">
+                        <textarea class="w-full px-5 py-4 rounded-lg border-0 bg-secondary " rows="4" type="text"
+                            placeholder="Your Message">
+                    </textarea>
+                        <button type="button" data-modal-target="authentication-modal"
+                            data-modal-toggle="authentication-modal"
+                            class="text-white bg-primary   font-medium rounded-md text-sm px-5 py-4 text-center mr-3 md:mr-0">Send
+                            Message</button>
+                    </div>
+                    <div
+                        class="col-span-1 row-span-1 flex flex-col items-center bg-secondary py-16  border-r-2  border-gray-400 ">
+                        <img width="40" src="./images/email.png" alt="">
+                        <h3 class="font-semibold text-2xl mt-4 ">Email Us</h3>
+                        <p class="mt-3 mb-2">sksi@gmail.com</p>
+                        <p>fun@gmail.com</p>
+                    </div>
+                    <div class="col-span-1 row-span-1 flex flex-col items-center bg-secondary py-16  ">
+                        <img width="40" src="./images/time.png" alt="">
+                        <h3 class="font-semibold text-2xl mt-4 ">Working Hour</h3>
+                        <p class="mt-3 mb-2">Mon - Fri</p>
+                        <p>9am to 6pm</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
     </main>
     <footer class="bg-gray-900 text-white p-4 md:p-0 ">
         <div class="container mx-auto pt-28 pb-24  grid grid-cols-1 md:grid-cols-4 gap-20">
